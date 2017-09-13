@@ -1,4 +1,5 @@
 from fac import fac
+from pytest import raises
 
 
 def test_fac():
@@ -10,3 +11,12 @@ def test_fac():
     assert fac(10) == 3628800
 
     assert fac(0) == 1
+
+    with raises(ValueError):
+        fac(-1)
+
+    with raises(ValueError):
+        fac(3.0)
+
+    with raises(ValueError):
+        fac('5')
