@@ -1,2 +1,5 @@
 def fac(n):
-    return 1
+    if n == 1:
+        return 1
+    else:
+        return n * fac(n - 1)
