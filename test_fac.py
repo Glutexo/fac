@@ -8,3 +8,5 @@ def test_fac():
     assert fac(4) == 24
     assert fac(5) == 120
     assert fac(10) == 3628800
+
+    assert fac(0) == 1
